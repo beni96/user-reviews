@@ -1,0 +1,32 @@
+:host {
+  align-items: center;
+  background-color: grey;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 100%;
+  overflow: auto;
+  padding: 32px;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 640px;
+  width: 100%;
+
+  .title {
+    color: rgb(0, 107, 179);
+    display: flex;
+    font-family: cursive;
+    font-size: 52px;
+    font-weight: 500;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  app-comment,
+  app-add-comment {
+    margin-bottom: 12px;
+  }
+}
