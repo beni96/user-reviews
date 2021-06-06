@@ -1,0 +1,5 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input formControlName="name" [value]="formControls.name.value" type="text" placeholder="Your name" />
+  <textarea formControlName="comment" [value]="formControls.comment.value" placeholder="Your comment"></textarea>
+  <button [disabled]="!form.valid">{{ isEdit ? 'Save' : 'Add' }}</button>
+</form>
