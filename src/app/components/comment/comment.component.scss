@@ -52,4 +52,10 @@ img {
   }
 }
 
-
+:host-context([style*='rtl']),
+:host-context([dir='rtl']) {
+  .icons-wrapper {
+    left: 16px;
+    right: unset;
+  }
+}
